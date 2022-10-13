@@ -10,10 +10,12 @@ name: OpenWrt-CI
 on:
 #  schedule:
 #    - cron: 0 20 * * *
-# 当master分支发生push事件时，触发workflow
-  push:
-    branches:
-      - master
+# 褰搈aster鍒嗘敮鍙戠敓push浜嬩欢鏃讹紝瑙﹀彂workflow
+# workflow_dispatch 浼氭樉绀轰竴涓墜鍔ㄨЕ鍙戠殑 閫夐」
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - master
   release:
     types: [published]
     
